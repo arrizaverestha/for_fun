@@ -1,0 +1,236 @@
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+body { 
+  margin:0;
+  padding:0;
+  perspective: 1px;
+  transform-style: preserve-3d;
+  height: 100%;
+  overflow-y: scroll;
+  font-family: helvetica;
+}
+
+
+.container {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5,1fr) 50px;
+}
+
+h2 {
+   font-size: 200%;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  font-size: 140%;
+  line-height: 150%;
+  color: #333;
+}
+
+.slide {
+  position: relative;
+  padding: 20vh 10%;
+  min-height: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+
+
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+.header {
+  text-align: left;
+  font-size: 175%;
+  color: #fff;
+  grid-row: 1;
+}
+
+#title {
+  background-image: url("banner.png");
+  z-index:2;
+  grid-row: 1;
+}
+
+#title p{
+  margin-left: 100px;
+  margin-top: 150px;
+  font-size: 150%;
+  line-height: 100%;
+  color: #FFFFFF;
+  transform: translateZ(.25px) scale(.75);
+  transform-origin: 40% 10%;
+}
+
+#title h2 {
+  margin-left: 100px;
+  transform: translateZ(.25px) scale(.75);
+  transform-origin: 40% 10%;
+ 
+ }
+/* ///////// konten 1//////////////////// */
+
+#slide1{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 50% 50%;
+  grid-gap: 30px;
+  background-color: #fff;
+  color: #444;
+}
+.satu{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.satu h1{
+  font-size: 350%;
+}
+
+
+.responsive1{
+  margin-left: 0;
+  width: 100%;
+  height: auto;
+  border-color: lightblue;
+}
+
+#slide1:before {
+  background: #ffffff ;
+  transform: translateZ(-1px) scale(2);
+}
+
+a.button{
+  display:inline-block;
+  background-color: #f9eefbff;
+  border: 0.16em solid rgba(255,255,255,0);
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'helvetica',sans-serif;
+  font-weight:300;
+  color:#c555daff;
+  text-align:center;
+  transition: all 0.2s;
+  
+}
+a.button:hover{
+  border-color: #f9eefbff;
+  background-color: #ffffff;
+
+}
+
+
+.button p{
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 100%;
+  line-height: 100%;
+  color: #c555daff;
+  transform-origin: 50% 10%;
+}
+
+.button h4{
+  font-size: 150%;
+  transform-origin: 50% 10%;
+}
+.button satua{
+  grid-column: 2/2;
+  grid-row: 1/2;
+  text-align: center;
+}
+.button dua{
+  grid-column: 1/2;
+  grid-row: 2/2;
+  text-align: center;
+}
+.button duaa{
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+/* ///// akhir konten 1 */
+
+/* /// Konten 2 nanti disini yaa */
+#slide2 {
+  background: #ffffff;
+  color: #444;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 30px;
+}
+
+
+.judul{
+  grid-column: 1/2;
+  width: 100%;
+}
+
+.text h1{
+  width:100%;
+  font-size:8vw;
+  transform-origin: 50% 10%;
+}
+
+
+.box {
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
+}
+.foto{
+  grid-column: 2;
+
+}
+
+.responsive{
+  max-width: 80%;
+  height: auto;
+  vertical-align: middle;
+  display:block;
+  margin-left: auto;
+	margin-right: auto;
+}
+
+.slide2 button{
+
+}
+
+
+/* /// akhir konten 2 */
+
+
+#slide3 {
+  grid-row: 6;
+  min-height: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  color: #444;
+  display: grid;
+}
+.contact{
+  background:#fbfbfbff;
+}
+.footer {
+  grid-row:6 ;
+  /* background: */
+}
+
+

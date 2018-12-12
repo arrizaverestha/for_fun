@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initialscale=1.0, user-scalable=no" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.4/dist/leaflet.css" integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA==" crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js" integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA==" crossorigin="">
+    </script>
+    <title>Hello!</title>
+  </head>
+  <body>
+    <div class="container">
+        <div id="title" class="slide header">
+          <p>Hello<br>
+            <b> Wellcome To My Page </b></p>
+        </div>
+      <div id="home" class="slide" >
+        <div class="satu">
+          <h1>My <br> Task !</h1>
+        </div>
+          <a href="index.html#hitung" class="button satua">
+            <h4>Mari Coba Berhitung </h4> <br>
+            <p>Perhitungan dasar perkalian pembagian penjumlahan dan pengurangan..</p>
+          </a>
+          <a href="index.html#kenal" class="button dua">
+            <h4>Kenalan Yuk !</h4> <br>
+            <p>Ingin tahu siapa pembuat web ini yuk kita kenalan dengan pembuatnya..</p>
+          </a>
+          <a href="index.html#mapping" class="button duaa">
+            <h4>Yuk Lihat Lokasi</h4> <br>
+            <p>Coba temukan beberapa lokasi favorit kamu dan lihat review nya..</p>
+          </a>    
+        </div>
+      <div class="slide" id="kenal">
+        <div class="judul">
+          <div class="text">
+            <h1>Kenalan <br> Yuk..!</h1>
+            <h2>Ardi Winata Nurriza</h2> <br>
+            HALLO ! Kenalin nama saya Ardi Winata Nurriza sering dipanggil Ardi
+             Umur 22 Tahun, Kuliah di Politeknik Elektronika Negeri Surabaya
+             Semester 7.
+          </div>
+          
+        </div>
+        <div class="foto">
+          <img src="photo.png" class="responsive">
+        </div>
+      </div>
+      
+      <div class="slide" id="hitung">
+          <h1>Mari <br> Berhitung</h1>
+        <div>
+            <input type="text" placeholder="First Number" />
+            <br> <br>
+            <input type="text" placeholder="Second Number" /> 
+            <br><br>
+            <button id="tambah"><b>+</b> </button>
+            <button id="kurang"><b>-</b> </button>
+            <button id="kali"><b>x</b>  </button>
+            <button id="bagi"><b>:</b>  </button>
+            <button id="bagi"><b>Clear</b> </button>
+            <br><br>
+            <h2>Result</h2><br>
+            <input type="text"  readonly />
+        </div>
+        <script src="addnumber.js"></script>
+      </div>
+
+      <div class="empat" id="mapping">
+        <div class="map">
+          <div class="pict">
+            <img  id='gambar' width="100%" height="100%">
+          </div>
+          <div class="review">
+            Review :<p id="deskripsi">Review :</p>
+          </div>
+        </div>
+        <div class="dua" id='mapid'>
+
+        </div>
+        <script src='peta.js'></script>
+      </div>
+      <div id="footer">
+    
+            <p> Copyright &copy; Ardi Winata Nurriza </p>
+    
+      </div>
+    </div>
+  </body>
+</html>

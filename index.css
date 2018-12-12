@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    background: #F8F7FF;
+    font-family: helvetica;
+    transform-style: preserve-3d;
+    overflow-y: scroll;
+}
+
+.slide {
+  position: relative;
+  padding: 15vh 10%;
+  min-height: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  transform-style: inherit;
+}
+
+.slide:nth-child(2n) .title {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.slide:nth-child(2n+1) .title {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5,100%) 50px;
+}
+
+.header{
+  text-align: left;
+  font-size: 175%;
+  color: #fff;
+  grid-row: 1;
+}
+
+#title {
+  background-image: url("banner.png");
+  z-index:2;
+  grid-row: 1;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#title p{
+  margin-left: 100px;
+  margin-top: 150px;
+  font-size: 150%;
+  line-height: 100%;
+  color: #FFFFFF;
+  transform: translateZ(.25px) scale(.75);
+  transform-origin: 40% 10%;
+}
+
+#title h2 {
+  margin-left: 100px;
+  transform: translateZ(.25px) scale(.75);
+  transform-origin: 40% 10%;
+ 
+ }
+ 
+
+/* ini konten 1 */
+#home{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  grid-template-rows: 50% 50%;
+  grid-gap: 30px;
+  background-color: #fff;
+  color: #444;
+}
+
+
+.satu{
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.satu h1{
+  font-size: 350%;
+}
+
+
+.responsive1{
+  margin-left: 0;
+  width: 100%;
+  height: auto;
+  border-color: lightblue;
+}
+
+#home:before {
+  background: #ffffff ;
+  transform: translateZ(-1px) scale(2);
+}
+
+a.button{
+  display:inline-block;
+  background-color: #f9eefbff;
+  border: 0.16em solid rgba(255,255,255,0);
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'helvetica',sans-serif;
+  color:#c555daff;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+a.button:hover{
+  border-color: #f9eefbff;
+  background-color: #ffffff;
+
+}
+.button p{
+  margin-left: 10px;
+  margin-top: 10px;
+  font-size: 100%;
+  line-height: 100%;
+  color: #c555daff;
+  transform-origin: 50% 10%;
+}
+.button h4{
+  padding-top: 40px;
+  font-size: 150%;
+  transform-origin: 50% 10%;
+}
+.button satua{
+  grid-column: 2/2;
+  grid-row: 1/2;
+  text-align: center;
+}
+.button dua{
+  grid-column: 1/2;
+  grid-row: 2/2;
+  text-align: center;
+}
+.button duaa{
+  grid-column: 2/2;
+  grid-row: 2/2;
+}
+/* end of konten 1  */
+
+#kenal {
+  background: #ffffff;
+  color: #444;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-gap: 30px;
+}
+
+
+.judul{
+  grid-column: 1/2;
+  width: 100%;
+}
+
+.text h1{
+  width:100%;
+  font-size:8vw;
+  padding-bottom: 80px;
+  transform-origin: 50% 10%;
+}
+
+.foto{
+  grid-column: 2;
+
+}
+
+.responsive{
+  max-width: 70%;
+  height: auto;
+  vertical-align: middle;
+  display:block;
+  margin-left: auto;
+	margin-right: auto;
+}
+
+ 
+
+/* akhir slide 2 */
+/* start slide 3 */
+
+#hitung{
+  background: #ffffff;
+  grid-row: 4;
+  text-align: center;
+  min-height: 100%;
+  width: 100vw;
+  box-sizing: border-box;
+  color: #444;
+}
+#hitung div{
+  margin-top: 50px;
+}
+#hitung h1{
+  font-size: 250%;
+}
+
+
+
+#hitung button {
+  display:inline-block;
+  padding:0.3em 1.2em;
+  margin:0 0.3em 0.3em 0;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background:linear-gradient(175deg, #c555daff 0%, #db6884ff 100%);
+  font-size: 100%;
+  text-align:center;
+  transition: all 0.2s;
+}
+
+#hitung button:hover{
+  border-color: #f9eefbff;
+  background: #ffffff;
+  color:#444;
+}
+#hitung input{
+  border-radius: 20px;
+  box-sizing: border-box;
+  resize: vertical;
+  width: 100%;
+  padding: 12px;
+  border-color: #FFFFFF;
+}
+
+/* akhir slide 3 */
+
+
+.empat{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+}
+.map{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2,1fr);
+}
+.pict{
+  background: violet;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: center;
+}
+.pict img{
+  width: 100%;
+  height: 350px;
+}
+.review{
+  background: grey;
+  grid-column: 1/2;
+  grid-row: 2/2;
+  text-align: center;
+}
+
+#footer{
+  background:linear-gradient(175deg, #c555daff 0%, #db6884ff 100%);
+  grid-row: 6;
+}
+
+
+#footer p{
+   text-align: center;
+   font-family:helvetica;
+   vertical-align: middle;
+   line-height: 50px;
+   font-size: 1.2vw;
+   color: white;
+}
+
+
